@@ -13,6 +13,11 @@
     "tests"
   ],
   "dependencies": {
-    "icomoon": "~0.0.1"
+    "icomoon": "latest",
+    "bootstrap": "latest",
+    "bootswatch": "latest",
+    "jquery": "latest"
+
+
   }
 }

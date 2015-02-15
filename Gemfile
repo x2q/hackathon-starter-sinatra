@@ -1,27 +1,27 @@
 source 'https://rubygems.org'
 
-gem 'sinatra'
-gem 'haml'
-gem 'sinatra-contrib', require: 'sinatra/config_file'
-gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
-gem "activerecord"
-gem "sinatra-activerecord", require: 'sinatra/activerecord'
-gem 'tux'
-gem 'rake'
-gem 'dotenv'
-gem 'squeel'
-gem 'json'
-gem 'require_all'
+gem 'activerecord'
 gem 'activesupport', require: ['active_support', 'active_support/core_ext']
-gem 'rack-flash3', require: 'rack-flash'
-gem "sinatra-flash", require: 'sinatra/flash'
 gem 'bcrypt'
 gem 'bcrypt-ruby' #legacy
-gem 'stripe'
-gem 'redcarpet', require: 'redcarpet/compat' #markdown rendering
+gem 'dotenv'
+gem 'haml'
+gem 'json'
 gem 'mail'
-gem 'premailer' #for inlining email styles
 gem 'nokogiri' #premailer wants this
+gem 'premailer' #for inlining email styles
+gem 'rack-flash3', require: 'rack-flash'
+gem 'rake'
+gem 'redcarpet', require: 'redcarpet/compat' #markdown rendering
+gem 'require_all'
+gem 'sinatra'
+gem 'sinatra-activerecord', require: 'sinatra/activerecord'
+gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
+gem 'sinatra-contrib', require: 'sinatra/config_file'
+gem 'sinatra-flash', require: 'sinatra/flash'
+gem 'squeel'
+gem 'stripe'
+gem 'tux'
 
 group :development do
     gem "sqlite3"

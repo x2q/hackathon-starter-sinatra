@@ -1,9 +1,9 @@
 {
   "name": "hackathon-starter-sinatra",
-  "version": "0.0.1",
-  "homepage": "https://github.com/qrohlf/hackathon-starter-sinatra",
+  "version": "0.0.2",
+  "homepage": "https://github.com/x2q/hackathon-starter-sinatra",
   "authors": [
-    "Quinn Rohlf <qr@qrohlf.com>"
+    "x2q <x2q@x2q.net>"
   ],
   "ignore": [
     "**/.*",
@@ -13,11 +13,9 @@
     "tests"
   ],
   "dependencies": {
-    "icomoon": "latest",
+    "fontawesome": "latest",
     "bootstrap": "latest",
     "bootswatch": "latest",
     "jquery": "latest"
-
-
   }
 }

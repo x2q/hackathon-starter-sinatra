@@ -1,7 +1,7 @@
 !!!
 %html
     %head
-        %link(rel="stylesheet" href="/css/style.min.css")
+        != css :app_css, :media => 'screen'
         %link(rel="icon" href="/favicon.png")
         %meta(name="viewport" content="width=device-width, initial-scale=1.0")
         %title= @title || settings.app_name
@@ -20,5 +20,4 @@
                 .row
                     %p Built by <a href="http://qrohlf.com">@qrohlf</a>
 
-        %script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js")
-        %script(src="/vendor/bootstrap/dist/js/bootstrap.min.js")
+        != js :app_js

@@ -7,16 +7,14 @@
 // Set the theme - You can view a list of available themes at http://bootswatch.com
 @theme-name: 'lumen';
 // Import all Bootstrap modules
-@import "../vendor/bootstrap/less/bootstrap";
+@import "/bower_components/bootstrap/less/bootstrap";
 // Import the theme
-@import "../vendor/bootswatch/@{theme-name}/variables";
-@import "../vendor/bootswatch/@{theme-name}/bootswatch";
-// Import the icomoon stylesheet
-// Note that you need to enable the --relative-urls LESS option
-// for this to work.
-@import (less) "../vendor/icomoon/style.css";
+@import "/bower_components/bootswatch/@{theme-name}/variables";
+@import "/bower_components/bootswatch/@{theme-name}/bootswatch";
+// Import fontawesome
+@import "/bower_components/fontawesome/less/font-awesome";
 // Fix the path for the glyphicons font included with Bootstrap
-@icon-font-path: '../vendor/bootstrap/fonts/';
+@icon-font-path: '/bower_components/bootstrap/fonts/';
 
 
 // ====================================

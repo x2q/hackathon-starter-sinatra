@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
+
 gem 'sinatra'
 gem 'haml'
-gem 'sinatra-contrib', require: 'sinatra/config_file'           
+gem 'sinatra-contrib', require: 'sinatra/config_file'
+gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 gem "activerecord"
 gem "sinatra-activerecord", require: 'sinatra/activerecord'
 gem 'tux'
@@ -15,7 +17,7 @@ gem 'rack-flash3', require: 'rack-flash'
 gem "sinatra-flash", require: 'sinatra/flash'
 gem 'bcrypt'
 gem 'bcrypt-ruby' #legacy
-gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'stripe'
 gem 'redcarpet', require: 'redcarpet/compat' #markdown rendering
 gem 'mail'
 gem 'premailer' #for inlining email styles

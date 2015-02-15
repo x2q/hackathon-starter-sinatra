@@ -1,3 +1,30 @@
+register Sinatra::AssetPack
+
+assets {
+  serve '/bower_components',  from: 'bower_components'
+  serve '/assets',            from: 'assets'
+  serve '/fonts',             from: 'bower_components/fontawesome/fonts'
+
+  # The second parameter defines where the compressed version will be served.
+  # (Note: that parameter is optional, AssetPack will figure it out.)
+  # The final parameter is an array of glob patterns defining the contents
+  # of the package (as matched on the public URIs, not the filesystem)
+  js :app_js, '/js/app.js', [
+    '/bower_components/jquery/dist/jquery.min.js',
+    '/bower_components/bootstrap/dist/js/bootstrap.min.js'
+  ]
+  
+  css :app_css, '/css/style.css', [
+    #'/bower_components/bootstrap/dist/css/bootstrap.min.css',
+    '/assets/style.css'
+  ]
+
+  prebuild true
+  #css_compression :less
+  #js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
+  #css_compression :simple   # :simple | :sass | :yui | :sqwish
+}
+
 #######################################
 # Routes
 #
@@ -206,9 +233,9 @@ helpers do
         "<span class='glyphicon glyphicon-#{i}'></span>"
     end
 
-    #icomoon icons
-    def icon(i)
-        "<span class='icon-#{i}'></span>"
+    #fontawesome icons
+    def fa(i)
+        "<i class='fa fa-#{i}'></i>"
     end
 
     def login(u)

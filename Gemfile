@@ -22,6 +22,8 @@ gem 'sinatra-flash', require: 'sinatra/flash'
 gem 'squeel'
 gem 'stripe'
 gem 'tux'
+gem 'therubyracer'
+gem 'less'
 
 group :development do
     gem "sqlite3"
